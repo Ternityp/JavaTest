@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test JavaScript</title>
+    </head>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='LampuNyala.jpg'">Turn on the light</button>
+
+<img id="myImage" src="Lampu.jpg" style="width:150px">
+
+<button onclick="document.getElementById('myImage').src='Lampu.jpg'">Turn off the light</button>
+
+<p id="Teks">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("Teks").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="Munculah" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('Munculah').style.display='block'">Click Me!</button>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = "ini javascript tanpa sintak apapun dan tag apapun tetapi menggunakan script";
+</script>
+
+
+<p id="demo2">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo2").innerHTML = "Paragraph changed.";
+}
+</script>
+
+</body>
+</html> 
